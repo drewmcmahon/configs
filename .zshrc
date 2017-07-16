@@ -1,3 +1,11 @@
+# Prompt
+autoload -U promptinit; promptinit
+prompt pure
+PURE_PROMPT_SYMBOL='>'
+
+# Case insensitive autocomplete
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 # Aliases
 alias ll="ls -lhA --color"
 alias ls="pwd;ls --color"
@@ -24,3 +32,6 @@ zstyle :compinstall filename '/home/drew/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+# syntax highlighting
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

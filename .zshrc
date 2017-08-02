@@ -7,7 +7,9 @@ PURE_PROMPT_SYMBOL='>'
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
 # Aliases
-alias ll="ls -lhA --color"
+alias proj1="cd /home/drew/code/project1/src"
+alias lws="zsh /home/drew/load-workspaces.sh"
+alias ll="ls -trlhA --color"
 alias ls="pwd;ls --color"
 alias ..="cd .."
 alias fhere="find . -iname"
@@ -35,3 +37,5 @@ compinit
 
 # syntax highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

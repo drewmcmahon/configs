@@ -7,6 +7,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-buftabline'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'ajh17/Spacegray.vim'
 call plug#end()
 
 " Plugin features
@@ -20,12 +22,15 @@ let g:NERDTreeWinSize = 20
 nnoremap <Esc>{ :bprev<CR>
 nnoremap <Esc>} :bnext<CR>
 
+"Close buffer moves to prev buffer first
+nmap :bd<CR> :bp\|bd #<CR>
+
 " Features
 set nocompatible
 filetype indent plugin on
 syntax on
-colorscheme space-vim-dark
- 
+colorscheme spacegray
+
 " Must have options 
 set hidden
 set wildmenu

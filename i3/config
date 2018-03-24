@@ -25,7 +25,7 @@ font pango:monospace 12
 # font, it doesn’t scale on retina/hidpi displays.
 
 # set mod key
-set $mod Mod4
+set $mod Mod1
 
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
@@ -174,8 +174,8 @@ bar {
 new_window pixel 1
 
 # set background image
-exec feh --bg-scale /home/drew/rice/bg/retrowave.png
+# exec feh --bg-scale /home/drew/rice/bg/retrowave.png
 
 # autostart workspaces
-set $projDir "/home/drew/code/project1"
-exec --no-startup-id i3-msg 'workspace 1; exec i3-sensible-terminal -cd $projDir; exec i3-sensible-terminal -cd $projDir; workspace 2; exec firefox; workspace 1'
+# set $projDir "/home/drew/code/project1"
+# exec --no-startup-id i3-msg 'workspace 1; exec i3-sensible-terminal -cd $projDir; exec i3-sensible-terminal -cd $projDir; workspace 2; exec firefox; workspace 1'

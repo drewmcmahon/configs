@@ -36,6 +36,12 @@ compinit
 # End of lines added by compinstall
 
 # syntax highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# set caps-lock to control in X
+setxkbmap -option ctrl:nocaps
+
+# init nvm for node versions
+source /usr/share/nvm/init-nvm.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

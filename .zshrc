@@ -21,6 +21,17 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias mkdir="mkdir -pv"
 alias top="htop"
 
+# Pacman aliases
+alias pac="sudo /usr/bin/pacman -S" # default action - install one or more packages
+alias pacu="sudo /usr/bin/pacman -Syu" # [u]pdate - upgrade all packages to newest versions
+alias pacr="sudo /usr/bin/pacman -Rns" # [r]emove - uninstall one or more packages
+alias pacs="sudo /usr/bin/pacman -Ss" # [s]earch - search for a package using one or more keywords
+alias paci="sudo /usr/bin/pacman -Si" # [i]info - show information about a package
+alias paclo="sudo /usr/bin/pacman -Qdt" # [l]ist [o]rphans - list all packages which are orphaned
+alias pacc="sudo /usr/bin/pacman -Scc" # [c]lean cache - delete all not currently install package files
+alias paclf="sudo /usr/bin/pacman -Ql" # [l]ist [f]iles - list all files installed bu a given package
+
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -37,9 +48,6 @@ compinit
 
 # syntax highlighting
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# set caps-lock to control in X
-setxkbmap -option ctrl:nocaps
 
 # init nvm for node versions
 source /usr/share/nvm/init-nvm.sh

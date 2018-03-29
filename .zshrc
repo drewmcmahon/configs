@@ -6,9 +6,12 @@ PURE_PROMPT_SYMBOL='>'
 # Case insensitive autocomplete
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 
-# Aliases
-alias proj1="cd /home/drew/code/project1/src"
-alias lws="zsh /home/drew/load-workspaces.sh"
+# Personal Aliases
+projDir="/home/drew/projects/homepage/"
+alias lw1="i3-msg 'workspace2; exec firefox'"
+alias lw2="i3-msg 'workspace 1; exec i3-sensible-terminal -cd $projDir; exec i3-sensible-terminal -cd $projDir; workspace 2; exec firefox; workspace 1'"
+
+# System Aliases
 alias ll="ls -trlhA --color"
 alias ls="pwd;ls --color"
 alias ..="cd .."

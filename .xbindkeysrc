@@ -1,0 +1,14 @@
+"amixer set Master toggle"
+  XF86AudioMute
+
+"amixer set Master 5%+"
+  XF86AudioRaiseVolume
+
+"amixer set Master 5%-"
+  XF86AudioLowerVolume
+
+"sudo asus-kbd-backlight up"
+  XF86KbdBrightnessUp
+
+"sudo asus-kbd-backlight down"
+  XF86KbdBrightnessDown

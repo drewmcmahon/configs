@@ -16,6 +16,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'ap/vim-buftabline'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'ajh17/Spacegray.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 " Plugin features
@@ -36,7 +38,8 @@ nmap :bd<CR> :bp\|bd #<CR>
 set nocompatible
 filetype indent plugin on
 syntax on
-colorscheme spacegray
+colorscheme onedark
+set noshowmode
 
 " Must have options 
 set hidden
@@ -66,8 +69,8 @@ set cursorline
 set scrolloff=3
  
 " Indentation options
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Visual

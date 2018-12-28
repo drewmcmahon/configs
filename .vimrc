@@ -25,7 +25,7 @@ let g:javascript_plugin_flow = 1
 nnoremap <c-p> :FZF<cr>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-let g:NERDTreeWinSize = 20
+let g:NERDTreeWinSize = 30
 
 " Switch buffers shortcut
 nnoremap <Esc>{ :bprev<CR>
@@ -67,6 +67,8 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 set cursorline
 set scrolloff=3
+set splitbelow
+set splitright
  
 " Indentation options
 set shiftwidth=2

@@ -13,11 +13,13 @@ Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'ap/vim-buftabline'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'ajh17/Spacegray.vim'
 Plug 'joshdick/onedark.vim'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'davidhalter/jedi-vim'
+" Plug 'itchyny/lightline.vim'
+" Plug 'ap/vim-buftabline'
 call plug#end()
 
 " Plugin features
@@ -26,6 +28,9 @@ nnoremap <c-p> :FZF<cr>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:NERDTreeWinSize = 30
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:jedi#completions_command = "<C-N>"
 
 " Switch buffers shortcut
 nnoremap <Esc>{ :bprev<CR>

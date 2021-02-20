@@ -7,17 +7,17 @@ endif
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'ajh17/Spacegray.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'davidhalter/jedi-vim'
+" Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
+" Plug 'w0rp/ale'
+" Plug 'cakebaker/scss-syntax.vim'
+" Plug 'ajh17/Spacegray.vim'
+" Plug 'joshdick/onedark.vim'
+" Plug 'davidhalter/jedi-vim'
 " Plug 'itchyny/lightline.vim'
 " Plug 'ap/vim-buftabline'
 call plug#end()
@@ -30,7 +30,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 let g:NERDTreeWinSize = 30
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:jedi#completions_command = "<C-N>"
+" let g:jedi#completions_command = "<C-N>"
 
 " Switch buffers shortcut
 nnoremap <Esc>{ :bprev<CR>
@@ -43,7 +43,7 @@ nmap :bd<CR> :bp\|bd #<CR>
 set nocompatible
 filetype indent plugin on
 syntax on
-colorscheme onedark
+" colorscheme onedark
 set noshowmode
 
 " Must have options 
